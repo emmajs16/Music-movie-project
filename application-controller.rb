@@ -1,6 +1,6 @@
 require 'bundler'
 Bundler.require
 
-class MyApp <Sinatra: :Base
+class MyApp <Sinatra::Base
 
 end
