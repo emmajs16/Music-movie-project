@@ -1,29 +1,30 @@
 h1 {
-  width: 40%;
-  float: left;
+  text-align: center;
+  background-color: lavender;
+  font-family: Oswald;
+  border: solid navy 2px;
+}
+body {
+  background-color: D1F2EB;
+  color: navy;
+  font-family: consalas;
+}
+input {
+color: navy;
+font-family: arial;
+}
+h2 {
+  font-family: Oswald;
 }
 
-
-<body> {
-  display: inline-block;
-  width: 20%;
-  background: blue;
-  vertical-align: top;
+button {
+  background-color: lavender;
+  color: navy;
+}
+h4 {
+  font-family: consolas;
 }
 
-
-</body>
-
-clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
+img {
+  height: 150px;
+}

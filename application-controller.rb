@@ -1,6 +1,6 @@
 require 'bundler'
 Bundler.require
-<<<<<<< HEAD
+
 # require_relative '/pig_latinize.rb'
 class MyApp < Sinatra::Base
 
@@ -8,7 +8,7 @@ class MyApp < Sinatra::Base
  erb :index
 end
 #
-=======
+
 # require_relative 'models/pig_latinize.rb'
 class MyApp < Sinatra::Base
 
@@ -17,7 +17,7 @@ class MyApp < Sinatra::Base
   end
 
 
->>>>>>> f293d27eb4120ede63e62ac65fff9ab1f5388734
+
 #   get '/pig_latin' do
 #   erb :to_pig_latin
 #   end
@@ -45,10 +45,7 @@ class MyApp < Sinatra::Base
 #   erb :instruction
 #
 # end
-<<<<<<< HEAD
-#
- end #ends sinatra class
-=======
 
-end #ends sinatra class
->>>>>>> f293d27eb4120ede63e62ac65fff9ab1f5388734
+#
+end
+ end #ends sinatra class
