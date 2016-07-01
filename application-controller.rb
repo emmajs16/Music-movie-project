@@ -1,51 +1,52 @@
 require 'bundler'
 Bundler.require
+require_relative 'models/questions'
 
-# require_relative '/pig_latinize.rb'
 class MyApp < Sinatra::Base
 
- get '/' do
- erb :index
+get'/' do
+  erb :index
 end
-#
 
-# require_relative 'models/pig_latinize.rb'
-class MyApp < Sinatra::Base
+get '/questions' do
+  erb :questions
+end
 
-  get '/' do
-    erb :index
+get '/alt.erb' do
+  erb :alt
+end
+
+get '/country.erb' do
+  erb :country
+end
+
+get '/pop.erb' do
+  erb :pop
+end
+get '/rb.erb' do
+  erb :pop
+end
+
+post  '/index' do
+  answers = params.values
+  print params
+  @total= 0
+  answers.each do |answer|
+    @total += answer.to_i
   end
+  puts @total
 
-
-
-#   get '/pig_latin' do
-#   erb :to_pig_latin
-#   end
-# post '/first_name' do
-#   params[:first_name]
-# end
-#
-# post '/piglatinize' do
-#   to_pig_latin(params[:phrase])
-# end
-# get '/instruction/:season' do
-#   season = params[:season]
-#   if season == "winter"
-#     @instruction = "Play in the snow! Drink hot chocolate!"
-#   elsif season == "summer"
-#     @instruction = "Go swimming! Wear sunscreen!"
-#   elsif season == "spring"
-#     @instruction = "Take your allergy medicine! Look at flowers."
-#   elsif season == "fall"
-#     @instruction ="Rake leaves! Make pumkin pie!"
-#   else
-#     @instruction = "You didn't enter a season."
-#   end
-#
-#   erb :instruction
-#
-# end
-
-#
+  @genre = genre_chooser(@total)
+  if @genre == "country"
+    erb :country
+  elsif @genre == "r&b"
+    erb :rb
+  elsif @genre == "pop"
+    erb :pop
+  elsif @genre == "alternative"
+    erb :alt
+  end
 end
- end #ends sinatra class
+
+
+end

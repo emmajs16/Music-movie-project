@@ -1,30 +1,68 @@
-h1 {
-  text-align: center;
-  background-color: lavender;
-  font-family: Oswald;
-  border: solid navy 2px;
-}
+
 body {
-  background-color: D1F2EB;
-  color: navy;
+  background-image: url("http://www.psdgraphics.com/file/colorful-triangles-background.jpg");
+  color: #000033;
   font-family: consalas;
 }
 input {
 color: navy;
-font-family: arial;
+font-family: Arvo;
 }
 h2 {
-  font-family: Oswald;
+  font-family: Arvo;
+  font-size: 30pt;
 }
 
 button {
   background-color: lavender;
-  color: navy;
+  font-family: Arvo;
+  font-size: 30pt;
+  color: #000033;
+  font-size:
 }
 h4 {
-  font-family: consolas;
+  font-family: Arvo;
+  font-size: 20pt;
 }
 
 img {
   height: 150px;
+  text-align: center;
+
 }
+
+.question {
+  border: solid #000033 20px;
+  text-align: center;
+}
+.blank {
+  color: ivory;
+}
+h1 {
+  background-image: url("http://raniahostel.com/hostel/template/images/certificate.jpg");
+  font-family: Arvo ;
+  border: solid white;
+  border-radius: 5px;
+  font-size: 45pt;
+  float: left;
+}
+
+/*.listen {
+  float:right;
+}
+.watch {
+  float:left;
+}*/
+/*image border
+shadowed text
+faded background
+importing own images
+add instagram and twitter links
+itunes account link
+netflix/hulu/amazon link
+gifs
+quotes
+bordered pictures on homepage
+text color on homepage
+embed videos (music video, trailer)
+*/
