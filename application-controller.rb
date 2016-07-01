@@ -12,24 +12,23 @@ get '/questions' do
   erb :questions
 end
 
-get '/alt.erb' do
-  erb :alt
-end
+# get '/alt.erb' do
+#   erb :alt
+# end
+#
+# get '/country' do
+#   erb :country
+# end
+#
+# get '/pop' do
+#   erb :pop
+# end
+# get '/rb' do
+#   erb :pop
+# end
 
-get '/country.erb' do
-  erb :country
-end
-
-get '/pop.erb' do
-  erb :pop
-end
-get '/rb.erb' do
-  erb :pop
-end
-
-post  '/index' do
+post  '/results' do
   answers = params.values
-  print params
   @total= 0
   answers.each do |answer|
     @total += answer.to_i

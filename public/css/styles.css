@@ -34,9 +34,8 @@ img {
 .question {
   border: solid #000033 20px;
   text-align: center;
-}
-.blank {
-  color: ivory;
+  font-family: Arvo;
+  font-size: 15pt;
 }
 h1 {
   background-image: url("http://raniahostel.com/hostel/template/images/certificate.jpg");
@@ -44,15 +43,25 @@ h1 {
   border: solid white;
   border-radius: 5px;
   font-size: 45pt;
-  float: left;
+}
+
+.quote {
+  font-family: Arvo;
+  border: solid ivory 2px;
+  color: navy;
+  background-image: url("http://raniahostel.com/hostel/template/images/certificate.jpg");
+  font-size: 40px;
+}
+.font {
+  font-family: Arvo;
 }
 
 /*.listen {
-  float:right;
+  font-family: Angeline Vintage;
 }
 .watch {
-  float:left;
-}*/
+  font-family: Angeline Vintage
+}*/*/
 /*image border
 shadowed text
 faded background
